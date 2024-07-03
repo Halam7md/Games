@@ -1,0 +1,126 @@
+body {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.8);
+
+    img {
+        object-fit: cover;
+        max-height: 30vh;
+    }
+}
+
+.logo{
+    width: 40px;
+}
+
+.logo-text{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: white;
+}
+
+.navbar-brand:hover{
+    color: white;
+}
+
+.navbar{
+    top:-40px;
+}
+.nav-item{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.bg-blue{
+    background-color: #3A497B;
+}
+
+.nav-item .nav-link{
+    color: white;
+}
+
+.nav-item .nav-link:hover{
+    color: #09c;
+}
+
+.nav-item .active{
+    color:#09c !important;
+}
+
+.nav-item .active:hover{
+    color:white !important;
+}
+
+#Details, #Games{
+    background-color: rgba(0, 0, 0, 0.8);   
+    min-height: 100vh; 
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card{
+    transition: all 0.5s;
+}
+
+.loading {
+    z-index: 9999;
+    inset: 0;
+    background-color:  rgba(0, 0, 0, 0.8);
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #3A497B;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    animation: pulse 1s linear infinite;
+  }
+.loader:after {
+    content: '';
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: scaleUp 1s linear infinite;
+  }
+  
+@keyframes scaleUp {
+    0% { transform: translate(-50%, -50%) scale(0) }
+    60% , 100% { transform: translate(-50%, -50%)  scale(1)}
+  }
+  @keyframes pulse {
+    0% , 60% , 100%{ transform:  scale(1) }
+    80% { transform:  scale(1.2)}
+  }
+
+.btn-blue{
+    background-color: transparent !important;
+    border: #3A497B solid 2px;
+    color:#3A497B;
+  }
+
+.btn-blue:hover{
+    background-color: #3A497B!important;
+    border: #3A497B solid 2px;
+    color:white;
+  }
+
+.text-blue{
+    color: #3A497B;
+  }
